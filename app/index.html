@@ -4,11 +4,322 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>4 2 Etsy Recreation</title>
+    <!-- <link rel="stylesheet" href="app/fonts/font-awesome-4.6.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
 
-    <h1>Hello World!</h1>
+    <div class="container-fluid">
+
+      <!-- Etsy Heading -->
+      <div class="row etsy-heading">
+        <div class="col-md-1">
+          <img class="etsy-word" src="images/etsy.jpg">
+        </div>
+        <div class="col-md-4">
+          <div class="search-box">
+            <span class="superman-search-entry">superman</span>
+            <span class="search-btn">Search</span>
+          </div>
+        </div>
+        <div class="col-md-offset-3 col-md-3 info">
+          <ul class="account-info">
+            <li class="sell">Sell on Etsy</li>
+            <li class="register">Register</li>
+            <li class="sign-in">Sign in</li>
+          </ul>
+        </div>
+        <div class="col-md-1 cart-parent-container">
+          <ul class="cart-container">
+            <li><i class="fa fa-shopping-cart cart-font" aria-hidden="true"></i></li>
+            <li class="cart">Cart</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Top Toolbar -->
+      <div class="row">
+        <div class="col-md-12 top-toolbar">
+          <span class="clothing-category">Clothing &amp; Accessories</span>
+          <span>Jewelry</span>
+          <span>Craft Supplies &amp; Tools</span>
+          <span>Weddings</span>
+          <span>Entertainment</span>
+          <span>Home &amp; Living</span>
+          <span>Kids &amp; Baby</span>
+          <span>Vintage</span>
+        </div>
+      </div>
+
+      <!-- Main Section -->
+      <div class="row main-section">
+        <!-- Left Toolbar Section -->
+        <div class="col-md-2 left-toolbar-columns">
+          <!-- Results Categories -->
+          <div class="left-toolbar">
+            <span class="show-results-for">Show results for:</span>
+            <div class="all-categories-container">
+              <ul class="lists all-categories">
+                <h3>All categories</h3>
+                <li>Art &amp; Collectibles</li>
+                <li>Paper &amp; Party Supplies</li>
+                <li>Clothing</li>
+                <li>Home &amp; Living</li>
+                <li>Accessories</li>
+                <li>Craft Supplies &amp; Tools</li>
+                <li>Jewelry</li>
+                <li>Toys &amp; Games</li>
+                <li>Books, Movies &amp; Music</li>
+                <li>Bags &amp; Purses</li>
+                <li>Bath &amp; Beauty</li>
+                <li>Weddings</li>
+                <li>Electronics &amp; Accessories</li>
+                <li>Pet Supplies</li>
+                <li>Shoes</li>
+              </ul>
+            </div>
+            <!-- Search Filters -->
+            <span class="refine-search">Refine your search</span>
+            <div class="search-filters">
+              <ul class="lists item-type">
+                <h3>Item Type</h3>
+                <li><span class="radio-button"><i class="fa fa-circle-thin" aria-hidden="true"></i></span> All items</li>
+                <li><span class="radio-button"><i class="fa fa-circle-thin" aria-hidden="true"></i></span> Handmade</li>
+                <li><span class="radio-button"><i class="fa fa-circle-thin" aria-hidden="true"></i></span> Vintage</li>
+              </ul>
+
+              <div class="price-container">
+                <span class="price">Price ($)</span>
+                <div class="low-to-high">
+                  <span class="price-range">Low</span>
+                  <span>to</span>
+                  <span class="price-range">High</span>
+                  <span class="price-range caret-right"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="filter-by-color">
+                <span>Filter by color</span>
+                <ul class="colors">
+                  <li class="box red"></li>
+                  <li class="box orange"></li>
+                  <li class="box yellow"></li>
+                  <li class="box green"></li>
+                  <li class="box blue"></li>
+                  <li class="box purple"></li>
+                  <li class="box black"></li>
+                  <li class="box white"></li>
+                </ul>
+              </div>
+
+              <div class="ordering-options-container">
+                <div class="ordering-options">Ordering options</div>
+                <div class>
+                  <div class="box check-box"></div>
+                  <span class="options">Accepts Etsy gifts cards</span>
+                </div>
+                <div>
+                  <div class="box check-box"></div>
+                  <span class="options">Customizable</span>
+                </div>
+              </div>
+
+              <div class="locations">
+                <span class="shop-location">Shop location</span>
+                <div class="choose-location">
+                  <span class="radio-button"><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
+                  <span class="anywhere">Anywhere</span>
+                </div>
+                <div class="choose-location">
+                  <span class="radio-button"><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
+                  <span>United States</span>
+                </div>
+                <span class="choose-location">Choose a custom location</span>
+              </div>
+
+              <div class="shipping-locations">
+                <span class="ship-to">Ship to</span>
+                <div class="ship-to-usa">
+                  <span>United States</span>
+                  <span class="caret-down"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section that contains Handlebar Templates -->
+        <div class="col-md-10">
+          <div class="row">
+            <div class="handlebar-templates">
+              <div class="col-md-4">
+                <span class="template-categories">All categories</span>
+                <span class="superman-search-results"> &gt; "superman" </span>
+                <span class="number-of-results">(35,081 results)</span>
+              </div>
+              <div class="col-md-offset-6 col-md-2">
+                <span class="sort-by">Sort by:</span>
+                <span class="relevancy">Relevancy</span>
+                <span class="caret-down"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Handlebar Template -->
+          <div class="stamp row">
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <!-- Next Page Nav -->
+      <div class="row">
+        <div class="col-md-offset-3 col-md-9">
+          <span>Related to superman</span>
+          <div>
+            <ul class="lists">
+              <li>batman</li>
+              <li>superman shirt</li>
+              <li>superman baby</li>
+              <li>wonder woman</li>
+            </ul>
+            <ul class="lists">
+              <li>man of steel</li>
+              <li>superman ring</li>
+              <li>superman svg</li>
+              <li>superman cape</li>
+            </ul>
+            <ul class="lists">
+              <li>superman bookshelf</li>
+              <li>superman costume</li>
+            </ul>
+          </div>
+          <div>
+            <span>Looking for shops?</span>
+            <span>Amuzingcreations</span>
+            <span>&#44;</span>
+            <span>erockssuperman</span>
+            <span>&#44;</span>
+            <span>MeetMySuperman</span>
+            <span>&#46;</span>
+            <span>See more.</span>
+          </div>
+          <div>
+            <span>&#10094;</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>&#149;&#149;&#149;</span>
+            <span>250</span>
+            <span>&#10095;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <span>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
+          <div>
+            <span>Enter your email</span>
+            <span>Subscribe</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Categories -->
+      <div class="row">
+        <ul class="lists">
+          <li>Turn your passion into a business</li>
+          <li>Open a shop</li>
+          <li>Sell on Etsy</li>
+          <li>Seller Handbook</li>
+          <li>Etsy credit card reader</li>
+          <li>Manufacturing</li>
+        </ul>
+        <ul class="lists">
+          <li>Join the community</li>
+          <li>Teams</li>
+          <li>Forums</li>
+          <li>Upcoming events</li>
+          <li>Affiliates</li>
+          <li>Etsy Local</li>
+        </ul>
+        <ul class="lists">
+          <li>Discover &amp; shop</li>
+          <li>Gift cards</li>
+          <li>Blog</li>
+          <li>Treasury</li>
+          <li>Mobile apps</li>
+          <li>Gift registries</li>
+          <li>Wholesale</li>
+          <li>Search</li>
+          <li>Editor's Picks</li>
+        </ul>
+        <ul class="lists">
+          <li>Get to know us</li>
+          <li>About</li>
+          <li>Policies</li>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Developers</li>
+          <li>Investors</li>
+        </ul>
+        <ul class="lists">
+          <li>Follow Etsy</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Pinterest</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+
+      <!-- Copyright Footer -->
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+          <div>
+            <img src=" ">
+            <span>United States</span>
+            <span class="vertical line"></span>
+            <span>English (US)</span>
+            <span class="vertical line"></span>
+            <span>$ (USD)</span>
+          </div>
+          <span>Help</span>
+          <div>
+            <span>&#169; 2016 Etsy, Inc.</span>
+            <span>Legal</span><span>Privacy</span><span>Interest-based ads</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="pic col-md-3">
+        <div class="tile">
+          <div class="photo-container">
+            <img src="{{Images.0.url_fullxfull}}">
+          </div>
+          <div class="product-info">
+            <span>{{title}}</span>
+            <span>{{Shop.shop_name}}</span>
+            <span>{{price}}</span>
+          </div>
+        </div>
+      </div>
+    </script>
+
 
     <script src="js/bundle.js"></script>
   </body>
