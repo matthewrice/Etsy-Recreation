@@ -16,6 +16,9 @@ img {
   max-width: 100%;
 }
 
+
+
+//////////////////////////////// HEADER NAVBAR /////////////////////////////////
 .etsy-heading{
   padding-top: 10px;
   border-bottom: 1px solid rgb(226, 226, 226);
@@ -56,13 +59,6 @@ img {
   border-radius: 0px 3px 3px 0px;  //border-radius --> top-lt, top-rt, bottom-rt, bottom-lt
 }
 
-// .heading-right{
-//   // margin-top: 12px;
-//   // padding-top: 8px;
-//   float: right;
-//   padding-right: 34px;
-// }
-
 .info,
 .cart-parent-container{
   padding: 0;
@@ -72,14 +68,12 @@ img {
   color: rgb(1,146,181);
   float: right;
   margin-top: 17px;
-  // margin-bottom: 15px;
+
   li{
     display: inline;
   }
 }
 
-// .sell
-//
 .register{
   margin-right: 10px;
   margin-left: 10px;
@@ -87,8 +81,6 @@ img {
 
 .sign-in{
   border: 1px solid rgb(1,146,181);
-  // margin-right: 10px;
-  // margin-bottom: 15px;
   padding: 8px;  //padding --> top, right, bottom, left
   border-radius: 3px;
   display: inline-block;
@@ -100,8 +92,6 @@ img {
   margin-right: 50px;
   border-left: 1px solid rgb(205, 201, 198);
   padding: 0px 0px 0px 20px; //padding --> top, right, bottom, left
-  // margin: 0 auto;
-
 }
 
 .cart-font{
@@ -117,7 +107,7 @@ img {
 }
 
 
-//Top Toolbar
+///////////////////////////// 2ND HEADER NAVBAR ////////////////////////////////
 .top-toolbar{
   border-bottom: 2px solid rgb(226, 226, 226);
   padding-top: 10px;
@@ -134,14 +124,17 @@ img {
 }
 
 
-//Main Section
-.main-section{
+////////////////////////// BACKGROUND - MAIN SECTION ///////////////////////////
+.sectionBelowHeaderNavBars{
   padding-top: 35px;
-  background-color: rgb(241, 241, 237);
+  background-color: rgb(245,245,241);
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(226,226,226);
+}
 
-  .left-toolbar{
-    margin-left: 35px;
-  }
+///////////////////////////////// LEFT NAVBAR //////////////////////////////////
+.left-toolbar{
+  margin-left: 35px;
 }
 
 .left-toolbar-columns{
@@ -162,7 +155,8 @@ li{
   list-style: none;
 }
 
-.lists{
+.lists,
+.businessOpportunityColumn{
   padding: 0;
 }
 
@@ -343,7 +337,6 @@ li{
   }
 }
 
-
 .shop-location{
   color: black;
   font-weight: bold;
@@ -378,15 +371,10 @@ li{
   }
 }
 
-//Handlebar Templates Section
-
-.handlebar-templates{
-  padding-bottom: 5px;
-  font-size: 12px;
-}
-
-.template-categories{
+/////////////////////////////// SEARCH RESULTS /////////////////////////////////
+.searchResults-categories{
   color: rgb(1,146,181);
+  margin-left: 5px;
 }
 
 .superman-search-results{
@@ -397,20 +385,232 @@ li{
   font-size: 14px;
 }
 
+.sortByRelevancy{
+  float: right;
+  padding-right: 5px;
+}
+
 .relevancy{
   color: rgb(1,146,181);
 }
 
-.tile {
-  margin-top: 11px;
-  height: 300px;
-  border: 1px solid lightgray;
+
+////////////////////////////////// THUMBNAILS //////////////////////////////////
+.stamp{
+  margin-top: 9px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
-.photo-container img{
-  height: 200px;
+.product{
+  padding-bottom: 7px;
+
+  img{
+    height: 260px;
+    font-size: 12px;
+  }
 }
-//
-// .product-info{
-//   height: 50px;
-// }
+
+.productName{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.companyName{
+  color: rgb(154,154,154);
+}
+
+.productPrice{
+  text-align: right;
+  color: rgb(128,192,66);
+}
+
+
+//////////////////////////// RELATED TO SEARCH /////////////////////////////////
+.relatedToSuperman{
+  font-weight: bold;
+}
+
+.relatedSearchTopicLists{
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.lookingFor{
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.numberedSearchResults{
+  padding-left: 0;
+}
+
+.numberedSearchResultsSquareContainer,
+.numberedSearchResultsContainer{
+  border: 1px solid rgb(226,226,226);
+  margin: 0 auto;
+  background-color: rgb(255,255,255);
+  font-weight: bold;
+}
+
+.numberedSearchResultsSquareContainer{
+  padding: 9px 13px 9px 13px;  //padding --> top, right, bottom, left
+}
+
+.numberedSearchResultsContainer{
+  padding: 9px 10px 9px 10px;  //padding --> top, right, bottom, left
+}
+
+.numberedSearchResultsContainer,
+.rightArrowContainer{
+  margin-left: -5px;
+}
+
+
+///////////////////////////////// FOOTER NAV ///////////////////////////////////
+.footerNav{
+  padding-top: 30px;
+  background-color: rgb(245,245,241);
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(226,226,226);
+}
+
+.getTopTrends{
+  border: 12px solid rgb(239,239,235);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  .etsyFinds{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.provideEmail{
+  width: 64%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.subscribeButton{
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(226,226,226);
+  padding-top: 6px;
+  padding-bottom: 7px;
+  background-color: rgb(245,100,0);
+  color: rgb(255,255,255);
+}
+
+.opportunities{
+  ul{
+    margin-bottom: 0;
+  }
+}
+
+.openShopButton{
+  background-color: rgb(52,168,196);
+  color: rgb(255,255,255);
+  border: 1px solid rgb(226,226,226);
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.lineSpacing{
+  line-height: 25px;
+}
+
+.facebookIcon,
+.twitterIcon,
+.pinterestIcon{
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.instagramIcon{
+  width: 14px;
+  margin-right: 4px;
+}
+
+
+////////////////////////////// COPYRIGHT FOOTER ////////////////////////////////
+.copyrightFooter{
+  padding-top: 30px;
+  background-color: rgb(245,245,241);
+  padding-bottom: 30px;
+  font-size: 12px;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.madeInUSA{
+  height: 32px;
+  // width: 250px;
+  padding-top: 6px;
+  color: black;
+
+  .USA{
+    position: relative;
+    display: inline-block;
+    top: 2px;
+  }
+}
+
+.madeInUSA,
+.helpButton{
+  border: 1px solid rgb(226,226,226);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.flag{
+  border-radius: 50%;
+  width: 18px;
+}
+
+.verticalLine{
+  color: rgb(203,204,201);
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.helpButtonColumn{
+  padding-left: 0;
+}
+
+.helpButton{
+  background-color: rgb(245,245,241);
+  width: 100%;
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.copyrightInfo{
+  margin-top: 25px;
+  text-align: center;
+
+  .copyright{
+    color: rgb(152,152,152);
+  }
+
+  .copyright,
+  .legal,
+  .privacy{
+    margin-right: 10px;
+  }
+}
