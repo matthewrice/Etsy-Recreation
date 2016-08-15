@@ -5852,11 +5852,14 @@ img {
 .clothing-category {
   margin-left: 25px; }
 
-.main-section {
+.sectionBelowHeaderNavBars {
   padding-top: 35px;
-  background-color: #f1f1ed; }
-  .main-section .left-toolbar {
-    margin-left: 35px; }
+  background-color: #f5f5f1;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e2e2e2; }
+
+.left-toolbar {
+  margin-left: 35px; }
 
 .left-toolbar-columns {
   padding: 0; }
@@ -5872,7 +5875,8 @@ img {
 li {
   list-style: none; }
 
-.lists {
+.lists,
+.businessOpportunityColumn {
   padding: 0; }
 
 .all-categories {
@@ -6038,12 +6042,9 @@ li {
     color: #cbccc9;
     float: right; }
 
-.handlebar-templates {
-  padding-bottom: 5px;
-  font-size: 12px; }
-
-.template-categories {
-  color: #0192b5; }
+.searchResults-categories {
+  color: #0192b5;
+  margin-left: 5px; }
 
 .superman-search-results {
   font-weight: bold; }
@@ -6051,15 +6052,179 @@ li {
 .number-of-results {
   font-size: 14px; }
 
+.sortByRelevancy {
+  float: right;
+  padding-right: 5px; }
+
 .relevancy {
   color: #0192b5; }
 
-.tile {
-  margin-top: 11px;
-  height: 300px;
-  border: 1px solid lightgray; }
+.stamp {
+  margin-top: 9px;
+  margin-left: 2px;
+  margin-right: 2px; }
 
-.photo-container img {
-  height: 200px; }
+.product {
+  padding-bottom: 7px; }
+  .product img {
+    height: 260px;
+    font-size: 12px; }
+
+.productName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 7px;
+  margin-bottom: 5px; }
+
+.companyName {
+  color: #9a9a9a; }
+
+.productPrice {
+  text-align: right;
+  color: #80c042; }
+
+.relatedToSuperman {
+  font-weight: bold; }
+
+.relatedSearchTopicLists {
+  margin-top: 20px;
+  line-height: 25px; }
+
+.lookingFor {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.numberedSearchResults {
+  padding-left: 0; }
+
+.numberedSearchResultsSquareContainer,
+.numberedSearchResultsContainer {
+  border: 1px solid #e2e2e2;
+  margin: 0 auto;
+  background-color: white;
+  font-weight: bold; }
+
+.numberedSearchResultsSquareContainer {
+  padding: 9px 13px 9px 13px; }
+
+.numberedSearchResultsContainer {
+  padding: 9px 10px 9px 10px; }
+
+.numberedSearchResultsContainer,
+.rightArrowContainer {
+  margin-left: -5px; }
+
+.footerNav {
+  padding-top: 30px;
+  background-color: #f5f5f1;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e2e2e2; }
+
+.getTopTrends {
+  border: 12px solid #efefeb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px; }
+  .getTopTrends .etsyFinds {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px; }
+
+.provideEmail {
+  width: 64%;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.subscribeButton {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  background-color: #f56400;
+  color: white; }
+
+.opportunities ul {
+  margin-bottom: 0; }
+
+.openShopButton {
+  background-color: #34a8c4;
+  color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.lineSpacing {
+  line-height: 25px; }
+
+.facebookIcon,
+.twitterIcon,
+.pinterestIcon {
+  font-size: 14px;
+  margin-right: 4px; }
+
+.instagramIcon {
+  width: 14px;
+  margin-right: 4px; }
+
+.copyrightFooter {
+  padding-top: 30px;
+  background-color: #f5f5f1;
+  padding-bottom: 30px;
+  font-size: 12px; }
+  .copyrightFooter a {
+    text-decoration: none; }
+
+.madeInUSA {
+  height: 32px;
+  padding-top: 6px;
+  color: black; }
+  .madeInUSA .USA {
+    position: relative;
+    display: inline-block;
+    top: 2px; }
+
+.madeInUSA,
+.helpButton {
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  border-radius: 5px; }
+
+.flag {
+  border-radius: 50%;
+  width: 18px; }
+
+.verticalLine {
+  color: #cbccc9;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.helpButtonColumn {
+  padding-left: 0; }
+
+.helpButton {
+  background-color: #f5f5f1;
+  width: 100%;
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold; }
+
+.copyrightInfo {
+  margin-top: 25px;
+  text-align: center; }
+  .copyrightInfo .copyright {
+    color: #989898; }
+  .copyrightInfo .copyright,
+  .copyrightInfo .legal,
+  .copyrightInfo .privacy {
+    margin-right: 10px; }
 
 /*# sourceMappingURL=app.css.map */
